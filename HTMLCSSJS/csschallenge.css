@@ -1,0 +1,31 @@
+.table li {
+    list-style-type: none;
+    text-align: center;
+}
+#list li {
+    list-style-type: none;
+}
+.cellName, .cellPlace, .cellThing {
+    display: inline-block;
+     border: 1px solid black;
+    font-weight: bold;
+    padding: 10px 10px 30px 10px;
+    width: 70px;
+    margin-right: -10px;
+}
+
+.cellName{
+    background-color: red;
+}
+.cellPlace{
+    background-color:aqua;
+}
+.cellThing{
+    background-color: yellow;
+}
+#list li{
+    border: 1px solid black;
+}
+#click li{
+    list-style-type: circle;
+}
