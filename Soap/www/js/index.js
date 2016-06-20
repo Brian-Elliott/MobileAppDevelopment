@@ -65,7 +65,6 @@ function getWeather()
 		 	dataType:"xml",
 		    success: function(xml){ 
 				console.log(xml);
-				alert("hello");
 				showWeather(xml);}
 		});
 }
@@ -94,15 +93,14 @@ function getTrain(){
 		   dataType: "text",
 		   success: function(result)
 			{ 	
-                console.log('getting trains...'+result);
 				showTrain(result);}
 		   });
 }
-function showTrain(){
-    alert('showingtrains');
+function showTrain(result){
+   
     //var json = jQuery.parseJSON(result);
     var json = JSON.parse(result);
-    alert("output");
+   
     var timestamp = Object.keys(json); //Gets the timestamp
 	var arr = json[timestamp]; //key is timestamp/ value is array
 	var northbound = arr[0].Northbound;
@@ -110,16 +108,12 @@ function showTrain(){
     
 	var output ="Northbound<br />";
 	for (i=0; i< northbound.length; i++){
-        alert("printOutput")
-		output+= "<span>"+ northbound[i].train_id +": " +
-			    northbound[i].destination+ "</span><span>"+northbound[i].depart_time
-                +"</span><span>"+northbound[i].service_type+"</span><span>"+northbound[i].status+ "</span><br/>";
+		output+= "<span class='row'><span class='headCell'>"+ northbound[i].train_id +": " +northbound[i].destination+ "</span><span class='cell'>" +northbound[i].depart_time +"</span><span class='cell'>" +northbound[i].service_type+"</span><span class='cell'>"  +northbound[i].status+ "</span></span><br/>";
     }
     
     output +="<hr> Southbound<br>";
     for (i=0; i< southbound.length; i++){
-		output+= southbound[i].train_id +": " +
-			    southbound[i].destination+ "</span><span>"+southbound[i].depart_time+"</span> <span>"+southbound[i].service_type+"</span><span>"+southbound[i].status+ "</span><br/>";
+		output+= "<span class='row'><span class='headCell'>"+ southbound[i].train_id +": " +southbound[i].destination+ "</span><span class='cell'>" +southbound[i].depart_time +"</span><span class='cell'>" +southbound[i].service_type+"</span><span class='cell'>"  +southbound[i].status+ "</span></span><br/>";
     }
     document.getElementById("resultTrain").innerHTML = output;
 }
