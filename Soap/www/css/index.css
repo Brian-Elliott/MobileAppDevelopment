@@ -1,0 +1,20 @@
+#resultTrain{
+    display: table;
+    border: 1px solid black;
+}
+.row {
+    display: table-row;
+}
+.headCell, .cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid black;
+}
+.headCell {
+    background-color: #F15C2F;
+    color: white;
+}
+.cell {
+    background-color: #00559E;
+    color: white;
+}
