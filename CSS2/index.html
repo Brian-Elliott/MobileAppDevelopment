@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index.css" />
+<script src="index.js"></script>
+<title>Challenge</title>
+</head>
+
+<body>
+<div id="tableView">
+<h1>Table View</h1>
+<p>This view arranges the array of JSON objects as a table</p>
+<div id="demoTable"></div>
+<hr>
+</div>
+<!-- view1-->
+
+<div id="listView">
+<h1>List View</h1>
+<p>This view arranges the array of JSON objects as a list view</p>
+<div id="demoList"></div>
+<hr>
+</div>
+<!-- view 2-->
+
+<div id="linkView">
+<h1>Link View</h1>
+<p>This view will only show the first field's of the object initially. Click on the name to see the other fields</p>
+<div id="demoName"></div>
+<div id="demoName2"></div>
+<hr>
+</div>
+<!-- view 3 -->
+
+<div id="practice">
+<h1>Practice</h1>
+<span class="table block">
+<span class="row border block" onclick="alert(0);">
+<span class="cell block">Apple</span>
+<span class="cell hidden">Chicken</span>
+<span class="cell hidden">Rose</span>
+</span>
+<span class="row border block" onclick="alert(1);">
+<span class="cell block">Grapes</span>
+<span class="cell hidden">Pork</span>
+<span class="cell hidden">Daisy</span>
+</span>
+<span class="row border block" onclick="alert(2)">
+<span class="cell block">Orange</span>
+<span class="cell hidden">Fish</span>
+<span class="cell hidden">Petunia</span>
+</span>
+</span>
+</div>
+    <form>
+        <input type="radio" name="view" value="table" onclick="showMyTable();"/> Table View <br />
+        <input type="radio" name="view" value="list" onclick="showMyList();"/> List View <br />
+        <input type="radio" name="view" value="link"/> Link View <br />
+    </form>
+<!-- practice -->
+</body>
+
+</html>
+

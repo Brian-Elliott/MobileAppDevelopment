@@ -1,0 +1,23 @@
+.table{
+    display: table;
+    border-collapse: collapse;
+}
+.row{
+    display: table-row;
+}
+.cell {
+    display: table-cell;
+    padding: 5px;
+}
+.border {
+    border: 1px solid black;
+}
+.block{
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.vhidden{
+    visibility: hidden;
+}

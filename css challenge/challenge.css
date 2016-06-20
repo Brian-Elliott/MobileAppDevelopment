@@ -1,0 +1,22 @@
+#table li, #list li {
+    list-style-type: circle;
+    text-align: center;
+}
+span {
+    display: inline-block;
+     border: 1px solid black;
+    font-weight: bold;
+    padding: 10px 10px 30px 10px;
+    width: 70px;
+    margin-right: -10px;
+}
+
+.cellName{
+    background-color: red;
+}
+.cellPlace{
+    background-color:aqua;
+}
+.cellThing{
+    background-color: yellow;
+}
