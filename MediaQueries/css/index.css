@@ -1,0 +1,24 @@
+#nav{
+    padding: 3px;
+    float: left;
+    width: 25%;
+    margin: 1em;
+}
+#nav img{
+    width: 100%;
+}
+#content{
+    padding: 3px;
+}
+@media all and(max-width) and (min-width: 300px)
+{
+    #nav, content {
+        float: none;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #nav img{
+        display: none;
+    }
+}
