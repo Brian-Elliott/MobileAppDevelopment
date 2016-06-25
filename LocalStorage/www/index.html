@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<script src="js/index.js"></script>
+
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+	<title>Local Storage
+	</title>
+</head>
+
+<body>
+	<div id="pgOptions" class="page">
+		<button type="button" id="btnStorePg" onclick="opStore()">Store Data</button>
+		<button type="button" id="btnGetPg" onclick="opGet()">Get Item</button>
+		<button type="button" id="btnShowAllPg" onclick="opShowAll()">Show All Items</button>
+	</div>
+	
+	
+	<div id="pgStore" class="page">
+		<h1>Storing Item</h1>
+		<form>
+			<label for="upc">UPC:</label>
+			<input type="text" id="upc" />
+			<label for="product">Product:</label>
+			<input type="text" id="product" />
+			<label for="quantity">Quantity:</label>
+			<input type="text" id="quantity" />
+			<button type="button" id="btnStore" onclick="btnStoreIt()">Store Item Locally</button>
+
+			<button type="button" onclick="showOptions()">Show Options</button>
+		</form>
+	</div>
+
+	<div id="pgGet" class="page">
+		<h1>Getting Item</h1>
+		<form>
+			<label for="upcGet">UPC:</label>
+			<input type="text" id="upcGet" />
+
+			<button type="button" id="btnGet" onclick="btnGetIt()">Get Item </button>
+
+			<button type="button" id="btnRemove" onclick="btnRemoveIt()">Remove Item </button>
+
+			<button type="button" onclick="showOptions()">Show Options</button>
+		</form>
+	</div>
+
+
+	<div id="pgShowAll" class="page">
+		<h1>Showing All Data
+	</h1>
+		<button type="button" onclick="showOptions()">Show Options</button>
+	</div>
+
+	<div id="result">
+	</div>
+
+</body>
+
+</html>
