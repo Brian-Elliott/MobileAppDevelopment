@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+<script type="text/javascript" src="cordova.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script src="js/index.js"></script>
+
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+<title>Media</title>
+</head>
+
+<body>
+    <h1>Media</h1>
+    <button id="btnPlay">Play</button>
+    <button id="btnPause">Pause</button>
+    <button id="btnStop">Stop</button>
+    <!--
+    <audio id="audioFile">
+        <source src="assets/threepigs.mp3">
+    </audio>
+    -->
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Story</li>
+        <li> <a href="#" onclick="changeStory('threepigs')">Three Pigs</a></li>
+        <li> <a href="#" onclick="changeStory('goldilocks')">Goldilocks</a></li>
+        <li> <a href="#" onclick="changeStory('cinderella')">Cinderella</a></li>
+    </ul>
+    <div data-role="footer">
+        <output id="timeOut">Elapsed Time: </output>
+    <img id="storyImg" src="img/threepigs.jpg" style="width: 100%" />
+    </div>
+    <!--
+    <audio controls id="audioFile">
+        <source src="assets/01_Mr_Roboto.mp3">
+        <source src="assets/01_Mr_Roboto.ogg">
+        Sorry! This audio file is not supported.
+    </audio>
+
+    <video controls style="width: 100%">
+        <source src="assets/small.mp4">
+        <source src="assets/small.ogv">
+    </video> -->
+    
+</body>
+</html>    
