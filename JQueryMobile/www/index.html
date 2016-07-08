@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+<script type="text/javascript" src="cordova.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script src="js/index.js"></script>
+
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+<title>JQuery Basics</title>
+</head>
+
+<body>
+    <div data-role="page" id="first">
+        <div data-role="header" data-position="fixed">
+            <h1>Page 1</h1>
+            <a href="#second" class="ui-btn ui-btn-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+        <div data-role="navbar">
+        <ul>
+        <li><a href="#" class="ui-btn-active ui-state-persist">Page 1</a></li> 
+        <li><a href="#second">Page 2</a></li>
+        <li><a href="#third">Page 3</a></li>
+        </ul>
+        </div>
+        </div>
+        <div role="main" class="ui-content">
+            <p>Page 1 Content</p>
+            
+            <div>
+                <label for="switch">Flip Me</label>
+                <input type="checkbox" id="switch"
+                       data-role="flipswitch"
+                       data-on-text="Mason"
+                       data-off-text="Casey" />
+            </div>
+            <fieldset data-role="controlgroup">
+            <legend> Favorite Band</legend>
+                <input type="radio" name="bands" id="journey" checked="checked"/>
+                <label for="journey">Journey</label>
+                
+                <input type="radio" name="bands" id="reo" checked="checked"/>
+                <label for="reo">REO Speedwagon</label>
+                
+                <input type="radio" name="bands" id="styx" checked="checked"/>
+                <label for="styx">Styx</label>
+            </fieldset>
+             
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus sollicitudin rhoncus. Etiam ac sapien pharetra, tristique felis sed, ullamcorper dolor. In hac habitasse platea dictumst. Suspendisse id ligula finibus, porta nulla in, pharetra sem. Vivamus sed odio scelerisque, condimentum purus at, interdum leo. In ac arcu a orci volutpat porttitor. Mauris molestie urna nec sagittis gravida.</p>
+
+            <p>Vivamus scelerisque ut dui iaculis varius. Curabitur justo leo, pretium facilisis finibus a, aliquet sit amet enim. Donec tincidunt sed nunc in tristique. Duis vel velit a lectus dapibus ultricies nec nec est. Cras placerat massa in tempor aliquam. Donec in aliquet eros. Vestibulum efficitur commodo eleifend. Phasellus at hendrerit ligula.</p>
+
+            <p>Fusce sed auctor lacus. Morbi porttitor aliquam risus fermentum accumsan. In consequat sapien sit amet tellus ornare, at consectetur odio fermentum. Vestibulum porta porttitor odio ut iaculis. Aenean commodo risus nec hendrerit blandit. Nulla laoreet odio ut egestas euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam ullamcorper rhoncus lacus, id congue quam vulputate a. Phasellus malesuada nulla est, vitae vestibulum est euismod ac. Pellentesque tellus ex, dapibus iaculis iaculis vitae, ultricies vitae nunc. Nullam malesuada mauris sit amet sapien pellentesque pretium.Page 1 Content</p>
+           
+        </div>
+        
+        <div data-role="footer" data-position="fixed">
+            <h3>(c) LTP Media</h3>
+        </div>
+        
+    </div>
+    <div data-role="page" id="second">
+        <a href="#first" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+        <div data-role="header" data-position="fixed">
+            <h1>Page 2</h1>
+        </div>
+        <div data-role="navbar">
+        <ul>
+        <li><a href="#first">Page 1</a></li> 
+        <li><a href="#" class="ui-btn-active ui-state-persist">Page 2</a></li>
+        <li><a href="#third">Page 3</a></li>
+        </ul>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="#third" class="ui-btn ui-btn-right ui-btn-icon-right ui-icon-carat-r">Next</a>
+            <p>Fusce consequat risus nec ligula pretium vestibulum. Nulla tincidunt imperdiet eros nec pulvinar. Suspendisse eleifend, purus ut consequat rutrum, tortor mi placerat ante, in iaculis mauris justo ac ipsum. Curabitur eget mi vitae felis venenatis pulvinar. Mauris sollicitudin erat a turpis pharetra, et iaculis risus pulvinar. Fusce vitae luctus metus. Maecenas pretium tortor eget eleifend fringilla. Maecenas a gravida enim. Integer laoreet sollicitudin tellus, et mattis orci. Phasellus eget tincidunt est, ut suscipit erat. Sed vel ipsum porttitor eros fringilla pharetra sed luctus nisl.</p>
+
+            <p>Integer leo turpis, tempor sed elit vitae, pellentesque placerat ante. Nulla dignissim mi lacus, id luctus urna auctor vitae. Nulla vel sem massa. Integer feugiat vestibulum efficitur. Sed varius, ante ut rutrum eleifend, ante quam luctus turpis, non porttitor massa ipsum in nisl. Vivamus non tristique odio, ac posuere orci. Mauris egestas efficitur odio eu hendrerit. Praesent suscipit laoreet ante eu tempus.</p>
+            
+        </div>
+        
+        <div data-role="footer" data-position="fixed">
+            <h3>(c) LTP Media</h3>
+        </div>
+        
+    </div>
+    <div data-role="page" id="third">
+        <div data-role="header" id="third">
+        <a href="#second" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-carat-l">Previous</a>
+        <div data-role="navbar">
+        <ul>
+        <li><a href="#first">Page 1</a></li> 
+        <li><a href="#second">Page 2</a></li>
+        <li><a href="#" class="ui-btn-active ui-state-persist">Page 3</a></li>
+        </ul>
+        </div>
+        </div>
+        <div role="main" class="ui-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus sollicitudin rhoncus. Etiam ac sapien pharetra, tristique felis sed, ullamcorper dolor. In hac habitasse platea dictumst. Suspendisse id ligula finibus, porta nulla in, pharetra sem. Vivamus sed odio scelerisque, condimentum purus at, interdum leo. In ac arcu a orci volutpat porttitor. Mauris molestie urna nec sagittis gravida.</p>
+
+            <p>Vivamus scelerisque ut dui iaculis varius. Curabitur justo leo, pretium facilisis finibus a, aliquet sit amet enim. Donec tincidunt sed nunc in tristique. Duis vel velit a lectus dapibus ultricies nec nec est. Cras placerat massa in tempor aliquam. Donec in aliquet eros. Vestibulum efficitur commodo eleifend. Phasellus at hendrerit ligula.</p>
+
+            <p>Fusce sed auctor lacus. Morbi porttitor aliquam risus fermentum accumsan. In consequat sapien sit amet tellus ornare, at consectetur odio fermentum. Vestibulum porta porttitor odio ut iaculis. Aenean commodo risus nec hendrerit blandit. Nulla laoreet odio ut egestas euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam ullamcorper rhoncus lacus, id congue quam vulputate a. Phasellus malesuada nulla est, vitae vestibulum est euismod ac. Pellentesque tellus ex, dapibus iaculis iaculis vitae, ultricies vitae nunc. Nullam malesuada mauris sit amet sapien pellentesque pretium.Page 1 Content</p>
+           
+        </div>
+        
+        <div data-role="footer" data-position="fixed">
+            <h3>(c) LTP Media</h3>
+        </div>
+        
+    </div>
+</body>
+
+</html>
